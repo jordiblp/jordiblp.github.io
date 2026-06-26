@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Spectral by HTML5 UP</title>
+		<title>Jordi Blanco-Pozo</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Spectral</a></h1>
+						<h1><a href="index.html">Jordi Blanco-Pozo</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -42,54 +42,50 @@
 					<section id="banner">
 						<div class="inner">
 							<h2>Spectral</h2>
-							<p>Another fine responsive<br />
-							site template freebie<br />
-							crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button primary">Activate</a></li>
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
+							<p>3rd year Ph.D. candidate in Astrophysics<br />
+								<br />
+							FPI fellow at the Institut de Ciències de l'Espai (ICE-CSIC)<br />
+								<br />
+							and the Institut d'Estudis Espacials de Catalunya (IEEC)<br />
+								<br />
+							blanco@ice.csic.es</a>.</p>
 						</div>
 					</section>
 
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/profile_picture.jpg" alt="" /></div><div class="content">
+								<h2>About me</h2>
+								<p>I am a third-year Ph.D. candidate in the Ignasi Ribas group at ICE-CSIC, working under the supervision of Guillem Anglada-Escudé and Manuel Perger.<br />
+									<br />
+									My research within the ERC Advanced project SPOTLESS focuses on mitigating and characterizing stellar activity using machine learning techniques to improve the detection and characterization of exoplanets. To address this challenge, I developed the CANSTAR framework (Blanco-Pozo et al., 2026), which utilizes a Convolutional Attention network to mitigate the influence of stellar activity in radial velocity (RV) data. By training the network with StarSim code and benchmarking it against real observational data from HARPS and CARMENES (as a consortium member), we were able to obtain more precise planetary parameters for TZ Arietis b compared to standard Gaussian Process Regression.<br />
+									<br />
+									Additionally, I lead a large observational campaign monitoring JWST targets that exhibit stellar activity contamination during transits. We use planetary transits as probes to sample stellar surface heterogeneities, feeding data from both JWST and ground-based observations into a novel machine learning technique to infer and separate the activity contamination (Blanco-Pozo et al., in prep.).</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>Mitigating stellar radial velocity jitter using orthogonal activity indices and a time-aware neural network</h2>
+								<h3>Jordi Blanco-Pozo, Manuel Perger, Guillem Anglada-Escudé, Ignasi Ribas, David Baroch, Marina Lafarga, Juan Carlos Morales, Òscar Porqueras-León, Sophie Stucki, David Vallmanya Poch (2026). Astronomy & Astrophysics 710, A194</h3>
+								<p>I led the development of CANSTAR (Convolutional AttentioN for STellar Activity Removal), a novel deep-learning approach introduced in this paper to mitigate stellar activity in radial velocity (RV) data. Our methodology consists of two main steps:<br />
+									<br />
+									(1) Extracting line-shape distortions: We utilize an orthonormal Hermite basis function on the Cross-Correlation Function (CCF) to separate true line shifts from activity-induced shape distortions. This allows us to recover classical CCF activity indicators (Contrast, FWHM, and BIS) while extending the analysis to higher-order moments, explaining >99% of the CCF variability.<br />
+									<br />
+									(2) Predicting apparent line shifts: We feed these distortion coefficients into a time-aware, hybrid convolutional neural network and transformer architecture, which effectively captures both short- and long-term activity correlations.<br />
+									<br />
+									After training the network on synthetic StarSim data to achieve cm/s precision, we applied the model to two distinct test cases using HARPS and CARMENES observations of the active stars ε Eridani and TZ Arietis. For these targets, CANSTAR successfully reduced the RV root-mean-square (RMS) to 52.5% for ε Eridani and 62.4% for TZ Arietis. Notably, the RMS for TZ Arietis was reduced further to 33.2% during the final observation season, where the cadence properly sampled the star's 1.96-day rotation period. Ultimately, this approach significantly improved the planetary parameter determination for TZ Arietis b compared to standard Gaussian Process modeling.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>The CARMENES search for exoplanets around M dwarfs - A long-period planet around GJ 1151 measured with CARMENES and HARPS-N data</h2>
+								<h3>Jordi Blanco-Pozo, Manuel Perger, Mario Damasso, Guillem Anglada Escudé, Ignasi Ribas, David Baroch, Jose Antonio Caballero, et al. (2023). Astronomy & Astrophysics 671, A50.</h3>
+								<p>I led the discovery paper for the planet candidate GJ 1151 c, a highly promising target in the emerging field of star-planet magnetospheric interactions. Previously, a LOFAR radio campaign detected circularly polarized emissions consistent with a sub-Alfvénic interaction between the host star and a short-period (1–5 days) Earth-sized exoplanet.<br />
+									<br />
+									By combining radial velocity data from CARMENES, HARPS, and HPF, our team detected a Neptune-mass exoplanet on a ~390-day orbit (GJ 1151 c), alongside a longer-term sinusoidal signal (>2000 days) indicative of a potential outer companion. While we did not detect the proposed short-period Earth-mass planet, instead establishing updated mass detection limits, we concluded that GJ 1151 c is unlikely to be the source of the observed radio emissions.<br />
+									<br />
+									Follow up campaigns with LOFAR and JWST have been carried out, demonstrating the great interest that this target has gathered from the community.</p>
 							</div>
 						</section>
 					</section>
@@ -135,13 +131,9 @@
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+								<h2>Observational campaigns</h2>
+								<p>To support my research on the characterization and mitigation of stellar activity in JWST exoplanet host targets, I have been awarded over 340 observing hours as Principal Investigator (PI). To conduct this campaign, we observe planetary transits with the high-speed cameras ULTRACAM at the NTT (La Silla, ESO, Chile) and HIPERCAM at the GTC (Roque de los Muchachos, Spain), together with long-term photometric monitoring with LAIA at the TJO (Montsec Observatory, Spain).</p>
 							</header>
-							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul>
 						</div>
 					</section>
 
