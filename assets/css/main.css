@@ -4029,10 +4029,10 @@ input, select, textarea {
 	}
 
 	body.is-mobile.landing #publications-banner.wrapper.style4 {
-	    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/telescopes_lasilla.JPG") !important;
- 	   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/telescopes_lasilla.JPG") !important;
-  	  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/telescopes_lasilla.JPG") !important;
-  	  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/telescopes_lasilla.JPG") !important;
+	    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
+ 	   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
+  	  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
+  	  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
 	}
 
 	/* Custom Campaigns Background Override */
