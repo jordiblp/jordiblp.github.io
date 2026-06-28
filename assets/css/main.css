@@ -4034,3 +4034,22 @@ input, select, textarea {
   	  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/telescopes_lasilla.JPG") !important;
   	  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/telescopes_lasilla.JPG") !important;
 	}
+
+	/* Custom CTA Background Override */
+	#third.wrapper.style4 {
+    	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
+    	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
+    	background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
+    	background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
+    	background-color: #2e3842 !important;
+    	background-size: cover !important;
+    	background-position: center center !important;
+    	background-attachment: fixed !important;
+	}
+
+	body.is-mobile.landing #third.wrapper.style4 {
+    	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
+    	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
+    	background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
+    	background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.JPG") !important;
+	}
