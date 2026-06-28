@@ -55,51 +55,47 @@
 								<h2>Publications</h2>
 								</header>
 						</div>
-					</section>
 					<section class="spotlight">
-    
-   						 <div class="image">
-        					<img src="images/starsim_animation.png" alt="StarSim Animation" style="width: 100%; height: auto; margin-bottom: 20px;" />
-        					<img src="images/CANSTAR_architecture.png" alt="CANSTAR Architecture" style="width: 100%; height: auto; margin-bottom: 20px;" />
-       						<img src="images/CANSTAR_TZAri.png" alt="CANSTAR TZ Arietis" style="width: 100%; height: auto; margin-bottom: 20px;" />
-        					<img src="images/CANSTAR_GP.png" alt="CANSTAR GP" style="width: 100%; height: auto;" />
-    					</div>
-    
-    					<div class="content">
-        					<h2>Mitigating stellar radial velocity jitter using orthogonal activity indices and a time-aware neural network</h2>
-        
-        					<p>Jordi Blanco-Pozo, Manuel Perger, Guillem Anglada-Escudé, Ignasi Ribas, David Baroch, Marina Lafarga, Juan Carlos Morales, Òscar Porqueras-León, Sophie Stucki, David Vallmanya Poch (2026). Astronomy & Astrophysics 710, A194</p>
-        
-        					<p>I led the development of CANSTAR (Convolutional AttentioN for STellar Activity Removal), a novel deep-learning approach introduced in this paper to mitigate stellar activity in radial velocity (RV) data. Our methodology consists of two main steps:<br />
-            				<br />
-            				(1) Extracting line-shape distortions: We utilize an orthonormal Hermite basis function on the Cross-Correlation Function (CCF) to separate true line shifts from activity-induced shape distortions. This allows us to recover classical CCF activity indicators (Contrast, FWHM, and BIS) while extending the analysis to higher-order moments, explaining >99% of the CCF variability.<br />
-            				<br />
-            				(2) Predicting apparent line shifts: We feed these distortion coefficients into a time-aware, hybrid convolutional neural network and transformer architecture, which effectively captures both short- and long-term activity correlations.<br />
-            				<br />
-            				After training the network on synthetic StarSim data to achieve cm/s precision, we applied the model to two distinct test cases using HARPS and CARMENES observations of the active stars ε Eridani and TZ Arietis. For these targets, CANSTAR successfully reduced the RV root-mean-square (RMS) to 52.5% for ε Eridani and 62.4% for TZ Arietis. Notably, the RMS for TZ Arietis was reduced further to 33.2% during the final observation season, where the cadence properly sampled the star's 1.96-day rotation period. Ultimately, this approach significantly improved the planetary parameter determination for TZ Arietis b compared to standard Gaussian Process modeling.
-        					</p>
-    					</div>
-    
-						<section class="spotlight">
+						<div class="image">
+							<img src="images/starsim_animation.png" alt="StarSim Animation" style="width: 100%; height: auto; margin-bottom: 20px;" />
+							<img src="images/CANSTAR_architecture.png" alt="CANSTAR Architecture" style="width: 100%; height: auto; margin-bottom: 20px;" />
+							<img src="images/CANSTAR_TZAri.png" alt="CANSTAR TZ Arietis" style="width: 100%; height: auto; margin-bottom: 20px;" />
+							<img src="images/CANSTAR_GP.png" alt="CANSTAR GP" style="width: 100%; height: auto;" />
+						</div>
+
+						<div class="content">
+							<h2>Mitigating stellar radial velocity jitter using orthogonal activity indices and a time-aware neural network</h2>
+		
+							<p>Jordi Blanco-Pozo, Manuel Perger, Guillem Anglada-Escudé, Ignasi Ribas, David Baroch, Marina Lafarga, Juan Carlos Morales, Òscar Porqueras-León, Sophie Stucki, David Vallmanya Poch (2026). Astronomy & Astrophysics 710, A194</p>
+		
+							<p>I led the development of CANSTAR (Convolutional AttentioN for STellar Activity Removal), a novel deep-learning approach introduced in this paper to mitigate stellar activity in radial velocity (RV) data. Our methodology consists of two main steps:<br />
+							<br />
+							(1) Extracting line-shape distortions: We utilize an orthonormal Hermite basis function on the Cross-Correlation Function (CCF) to separate true line shifts from activity-induced shape distortions. This allows us to recover classical CCF activity indicators (Contrast, FWHM, and BIS) while extending the analysis to higher-order moments, explaining >99% of the CCF variability.<br />
+							<br />
+							(2) Predicting apparent line shifts: We feed these distortion coefficients into a time-aware, hybrid convolutional neural network and transformer architecture, which effectively captures both short- and long-term activity correlations.<br />
+							<br />
+							After training the network on synthetic StarSim data to achieve cm/s precision, we applied the model to two distinct test cases using HARPS and CARMENES observations of the active stars ε Eridani and TZ Arietis. For these targets, CANSTAR successfully reduced the RV root-mean-square (RMS) to 52.5% for ε Eridani and 62.4% for TZ Arietis. Notably, the RMS for TZ Arietis was reduced further to 33.2% during the final observation season, where the cadence properly sampled the star's 1.96-day rotation period. Ultimately, this approach significantly improved the planetary parameter determination for TZ Arietis b compared to standard Gaussian Process modeling.
+							</p>
+						</div>
+					</section> <section class="spotlight">
 						<div class="image">
 							<img src="images/gj1151_rv.png" alt="GJ 1151 RV model" style="width: 100%; height: auto; margin-bottom: 20px;" />
 							<img src="images/gj1151_residuals.png" alt="GJ 1151 RV residuals" style="width: 100%; height: auto; margin-bottom: 20px;" />
 							<img src="images/gj1151_detection_limits.png" alt="GJ 1151 detection limits" style="width: 100%; height: auto;" />
 						</div>
-	
+
 						<div class="content">
-						<h2>The CARMENES search for exoplanets around M dwarfs - A long-period planet around GJ 1151 measured with CARMENES and HARPS-N data</h2>
-		
-						<p>Jordi Blanco-Pozo, Manuel Perger, Mario Damasso, Guillem Anglada Escudé, Ignasi Ribas, David Baroch, Jose Antonio Caballero, et al. (2023). Astronomy & Astrophysics 671, A50.</p>
-		
-						<p>I led the discovery paper for the planet candidate GJ 1151 c, a highly promising target in the emerging field of star-planet magnetospheric interactions. Previously, a LOFAR radio campaign detected circularly polarized emissions consistent with a sub-Alfvénic interaction between the host star and a short-period (1–5 days) Earth-sized exoplanet.<br />
-						<br />
-						By combining radial velocity data from CARMENES, HARPS, and HPF, our team detected a Neptune-mass exoplanet on a ~390-day orbit (GJ 1151 c), alongside a longer-term sinusoidal signal (>2000 days) indicative of a potential outer companion. While we did not detect the proposed short-period Earth-mass planet, instead establishing updated mass detection limits, we concluded that GJ 1151 c is unlikely to be the source of the observed radio emissions.<br />
-						<br />
-						Follow up campaigns with LOFAR and JWST have been carried out, demonstrating the great interest that this target has gathered from the community.
-						</p>
+							<h2>The CARMENES search for exoplanets around M dwarfs - A long-period planet around GJ 1151 measured with CARMENES and HARPS-N data</h2>
+
+							<p>Jordi Blanco-Pozo, Manuel Perger, Mario Damasso, Guillem Anglada Escudé, Ignasi Ribas, David Baroch, Jose Antonio Caballero, et al. (2023). Astronomy & Astrophysics 671, A50.</p>
+
+							<p>I led the discovery paper for the planet candidate GJ 1151 c, a highly promising target in the emerging field of star-planet magnetospheric interactions. Previously, a LOFAR radio campaign detected circularly polarized emissions consistent with a sub-Alfvénic interaction between the host star and a short-period (1–5 days) Earth-sized exoplanet.<br />
+							<br />
+							By combining radial velocity data from CARMENES, HARPS, and HPF, our team detected a Neptune-mass exoplanet on a ~390-day orbit (GJ 1151 c), alongside a longer-term sinusoidal signal (>2000 days) indicative of a potential outer companion. While we did not detect the proposed short-period Earth-mass planet, instead establishing updated mass detection limits, we concluded that GJ 1151 c is unlikely to be the source of the observed radio emissions.<br />
+							<br />
+							Follow up campaigns with LOFAR and JWST have been carried out, demonstrating the great interest that this target has gathered from the community.
+							</p>
 						</div>
-					</section>
 					</section>
 				<!-- CTA -->
 					<section id="cta" class="wrapper style4">
